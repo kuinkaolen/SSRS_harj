@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>datasource_harjoitus</DataSourceReference>
+      <CommandText>SELECT        KUVAUS AS Expr1, HINTA AS Expr2, SALDO AS Expr3, TUOTE.*, TUOTE_ID AS Expr4
+FROM            TUOTE</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Tuotekoodi">
+        <DataField>TUOTE_ID</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="Tuotteenkuvaus">
+        <DataField>KUVAUS</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Myyntihinta">
+        <DataField>HINTA</DataField>
+        <rd:TypeName>System.Double</rd:TypeName>
+      </Field>
+      <Field Name="Varastosaldo">
+        <DataField>SALDO</DataField>
+        <rd:TypeName>System.Double</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
